@@ -27,7 +27,7 @@ time, mark, audio, video {
 /* Base text styles */
 
 body {
-  padding:10px 50px 0 0;
+  padding:0px 50px 0 0;
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #232323;
@@ -212,12 +212,6 @@ header {
   float:left;
   position:fixed;
   border: 1px solid #000;
-  -webkit-border-top-right-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  -moz-border-radius-bottomright: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
   padding: 34px 25px 22px 50px;
   -webkit-font-smoothing: antialiased;
 }
