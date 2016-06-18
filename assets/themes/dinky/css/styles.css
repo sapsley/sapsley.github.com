@@ -102,9 +102,7 @@ ul li {
   list-style: inside;
   display: inline;
   padding-left: 3px;
-  color: white;
-  display: inline;
-  font-size: smaller;
+ 
 }
 
 ol li {
