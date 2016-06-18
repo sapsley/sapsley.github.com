@@ -24,7 +24,7 @@
         <ul>
           {% assign pages_list = site.pages %}
           {% assign group = 'navigation' %}
-          {% include JB/pages_list %}
+          
         </ul>
         {% if site.ads.google %}
         <div class="misc ad">
@@ -43,7 +43,7 @@
          
           <ul>
             {% if site.author.email %}
-            <li class="contact"><address><img border="0" alt="Email" src="http://i.imgur.com/qdtkXpx.png" width="42" height="42"></address></li>
+            <li class="contact"><address style="width: 42, height: 42"><img border="0" alt="Email" src="http://i.imgur.com/qdtkXpx.png" width="42" height="42"></address></li>
             {% endif %}
             {% if site.author.github %}
             <li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me"><img border="0" alt="GitHub" src="http://i.imgur.com/PBijr5L.png" width="42" height="42"></a></li>
