@@ -77,7 +77,7 @@ h4, h5, h6 {
 }
 
 a {
-  color:#C30000;
+  color: white;
   font-weight:200;
   text-decoration:none;
 }
@@ -100,7 +100,11 @@ strong {
 
 ul li {
   list-style: inside;
-  padding-left: 25px;
+  display: inline;
+  padding-left: 3px;
+  color: white;
+  display: inline;
+  font-size: smaller;
 }
 
 ol li {
