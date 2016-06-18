@@ -26,14 +26,18 @@
         <div class="misc vcard">
          
           <ul>
+          <!--
             {% if site.author.email %}
             <li class="contact"><a href="mailto:{{ site.author.email }}" style="display: inline; width: 42px; height: 42px;"><img border="0" alt="Email" src="http://i.imgur.com/qdtkXpx.png" width="42" height="42"></address></li>
-            {% endif %}
+            {% endif %}-->
             {% if site.author.github %}
             <li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me"><img border="0" alt="GitHub" src="http://i.imgur.com/PBijr5L.png" width="42" height="42"></a></li>
             {% endif %}
             {% if site.author.twitter %}
             <li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me"><img border="0" alt="Twitter" src="http://i.imgur.com/lVX8Xpc.png" width="42" height="42"></a></li>
+            {% endif %}
+            {% if site.author.linkedin %}
+            <li class="linkedin"><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" rel="me"><img border="0" alt="LinkedIn" src="http://i.imgur.com/3rHRSXi.png" width="42" height="42"></a></li>
             {% endif %}
             {% if site.author.facebook %}
             <li class="facebook"><a href="http://facebook.com/{{ site.author.facebook }}/" rel="me">facebook.com/{{ site.author.facebook }}</a></li>
