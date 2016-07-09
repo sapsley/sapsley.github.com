@@ -4,6 +4,7 @@ title: "What's This?"
 description: "The obligatory first post of a blog, explaining who I am and what I'm doing"
 category: about
 tags: [about, first, sapsley]
+date: "June 18th, 2016"
 ---
 {% include JB/setup %}
 

@@ -4,6 +4,7 @@ title: "Android and BLE"
 description: "Tips for working with BLE on Android"
 category: 
 tags: ["ble", "android", "bluetooth", "java", "app", "mobile", "gatt", "133 error"]
+date: "July 9th, 2016"
 ---
 {% include JB/setup %}
 
