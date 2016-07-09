@@ -57,36 +57,7 @@ One of the most important places to call these functions are when the activity o
 
 Ok, so even though you’ve followed all of the above tips, there’s one error you’re still probably going to see from time to time.  It’s one of the darkest errors I’ve ever encountered... The 133 error.  This error is thrown in the `onConnectionStateChanged` function of your Bluetooth Gatt Callback (The status will equal 133).  And the spooky thing is that no one knows exactly what it means.  Luckily, there are ways we can handle it. 
 
-The best method I’ve come up with for handling it is to stop BLE scanning as soon as it’s thrown.  Then turn off bluetooth... wait for a few seconds... and turn bluetooth back on and resume scanning.  All of this can be done programmatically:
-
-```java
-public void refreshBluetooth()
-    {
-        stopLeScanning();
-        mBluetoothAdapter.disable();
-        try 
-        {
-            Thread.sleep(5000);
-        } 
-        catch (InterruptedException e) 
-        {
-            e.printStackTrace();
-        }
-        mBluetoothAdapter.enable();
-        try 
-        {
-            Thread.sleep(5000);
-        } 
-        catch (InterruptedException e) 
-        {
-            e.printStackTrace();
-        }
-        startLeScanning();
-    }
-```    
-
-
-You’re definitely going to want to provide some sort of alert so that the user knows what’s going on as this process takes 5 - 10 seconds.  I’ve seen a lot of 133 errors in my day and this is the most reliable way to recover from it.  On occasion the error will be thrown 2 or 3 times in a row, but cycle the bluetooth stack enough times and you’ll be able to get out of it.
+The best method I’ve come up with for handling it is to stop BLE scanning as soon as it’s thrown.  Then turn off bluetooth... wait for a few seconds... and turn bluetooth back on and resume scanning.  All of this can be done programmatically but you’re definitely going to want to provide some sort of alert so that the user knows what’s going on as this process takes 5 - 10 seconds.  I’ve seen a lot of 133 errors in my day and this is the most reliable way to recover from it.  On occasion the error will be thrown 2 or 3 times in a row, but cycle the bluetooth stack enough times and you’ll be able to get out of it.
 
 Of course, the best thing to do would be to avoid the 133 error entirely.  Implementing the first three techniques we discussed will dramatically reduce the number of times this error gets thrown.  
 
