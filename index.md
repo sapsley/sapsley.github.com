@@ -7,7 +7,7 @@ tagline: Supporting tagline
 
 {% for post in site.posts %}
   <h1> {{ post.title }} </h1>
-  <h5> {{ post.date }} </h5>
+  <h5> {{ post.datename }} </h5>
   <div class="content">
      {{ post.content }}
   </div>
